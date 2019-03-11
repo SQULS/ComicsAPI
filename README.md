@@ -1,5 +1,3 @@
-# Comics API
-
 Provides a service for getting comic releases by way of scraping data from [comiclist.com](http://www.comiclist.com/index.php). This project was initially devised as a way of creating and testing a simple site scraping class for use in other projects. This means that this service will exist as long as Comic List does or they block the IP. Which ever occurs first.
 
 ## Endpoints
@@ -37,4 +35,4 @@ Abrams Comicarts, Action Lab Entertainment, Aftershock Comics, American Gothic P
 
 ## Issues
 
-Please feel free to report any issues on the [Github page](https://github.com/raw-bit/ComicsAPI/issues). 
+Please feel free to report any issues on the [Github page](https://github.com/raw-bit/ComicsAPI/issues).
