@@ -9,7 +9,7 @@ Example base url call:
 https://ghostbox.design/api/comics
 ```
 
-It also accepts two additional parameters.
+It also accepts three additional parameters.
 
 ### week
 
@@ -32,6 +32,16 @@ https://ghostbox.design/api/comics?publishers=dc%20comics,marvel%20comics
 At time of creation the available publishers were:
 
 Abrams Comicarts, Action Lab Entertainment, Aftershock Comics, American Gothic Press, Amigo Comics, Antarctic Press, Archie Comic Publications, Aspen Comics, Big Finish, Blizzard Entertainment, BOOM! Studios, Broadsword Comics, Cinebook, Comic Shop News, Danger Zone, Dark Horse Comics, Dark Planet, DC Comics, Dead Reckoning, Drawn And Quarterly, Dynamic Forces, Dynamite Entertainment, Ember, Fantagraphics Books, First Second, Gallery 13, Golden Apple Books, Hachette Partworks, Graphic India, IDW Publishing, Image Comics, Keenspot Entertainment, Kodansha Comics, Last Gasp, Lion Forge, Margaret K Mcelderry Books, Marvel Comics, Nobrow, Panini Publishing, Oni Press, Ps Artbooks, Random House Books For Young Readers, Rebellion/2000 Ad, Renegade Arts Entertainment, Sanctum Productions, Scout Comics, Stone Arch Books, Titan Comics, Tohan Corporation, Tokyopop, University Press Of Mississippi, Viz Media, William Morrow, Zenescope Entertainment
+
+### titles
+
+Will return an unordered list of all titles without publishers. Accepts boolean of ```1``` or ```0```.
+If ```publisher``` is also set as a parameter it will be ignored.
+
+Example call:
+```
+https://ghostbox.design/api/comics?titles=1
+```
 
 ## Issues
 
