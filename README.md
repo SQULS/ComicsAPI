@@ -9,11 +9,26 @@ Example base url call:
 https://ghostbox.design/api/comics
 ```
 
+Example JSON returned:
+
+```
+[{
+	"publisher": "DC COMICS",
+	"titles": ["Batman #1",
+            "Superman #1"]
+},
+{
+	"publisher": "MARVEL COMICS",
+	"titles": ["Spider-Man #1",
+            "Uncanny X-Men #1"]
+}]
+```
+
 It also accepts three additional parameters.
 
 ### week
 
-This allows you to select the required weeks data. Accepts either ```this``` or ```next```.
+This allows you to select the required weeks data. Accepts either ```this```, ```next``` or ```last```.
 
 Example call:
 ```
