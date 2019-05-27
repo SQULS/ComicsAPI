@@ -58,6 +58,15 @@ Example call:
 https://ghostbox.design/api/comics?titles=1
 ```
 
+### novariants
+
+Including this parameter will strip all references to variant covers or cover options, returning only one version per comic title. Accepts boolean of ```1``` or ```0```. So if variants are not required pass ```1```.
+
+Example call:
+```
+https://ghostbox.design/api/comics?novariants=1
+```
+
 ## Issues
 
 Please feel free to report any issues on the [Github page](https://github.com/raw-bit/ComicsAPI/issues).
