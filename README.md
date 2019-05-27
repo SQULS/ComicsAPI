@@ -24,7 +24,7 @@ Example JSON returned:
 }]
 ```
 
-It also accepts three additional parameters.
+It also accepts four additional parameters.
 
 ### week
 
