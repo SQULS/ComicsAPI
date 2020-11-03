@@ -10,12 +10,13 @@ require("./Scrape.php");
       $publisherList = explode(',', $vars['publishers']);
     }
     $publisherList = array_map('strtoupper', $publisherList);
-    $scrapeUrl = $vars['week'] ? $vars['week'] . '-week' : 'this-week';
-    $scrape = new scrape("http://www.comiclist.com/index.php/newreleases/" . $scrapeUrl);
+    $timeStamp = strtotime($vars['week'] . ' Wednesday');
+    $date = date("m-d-Y", $timeStamp);
+    $scrape = new scrape("https://blog.gocollect.com/comiclist-new-comic-book-releases-list-for-" . $date);
     $page = $scrape->getHtml();
     $sections = $scrape->getItemsByTag($page,'<p>','</p>');
     foreach ($sections as $section) {
-      $publisher = $scrape->getItemsByTag($section,'<u>','</u>');
+      $publisher = $scrape->getItemsByTag($section,'<b>','</b>');
       $titles = $scrape->getItemsByTag($section,'>','</a>');
       if (strpos($titles[0], $publisher[0]) !== false) {
         $newFirst = str_replace($publisher[0],'',$titles[0]);
