@@ -1,4 +1,8 @@
-Provides a service for getting comic releases by way of scraping data from [comiclist.com](http://www.comiclist.com/index.php). This project was initially devised as a way of creating and testing a simple site scraping class for use in other projects. This means that this service will exist as long as Comic List does or they block the IP. Which ever occurs first.
+**Note:** This repository is currently in flux as Comic List is moving its listings to [blog.gocollect.com](https://blog.gocollect.com/category/comiclist/).
+
+This endpoint provides a service for getting comic releases by way of scraping data from [comiclist.com](http://www.comiclist.com/index.php). This project was initially devised as a way of creating and testing a simple site scraping class for use in other projects. This means that this service will exist as long as Comic List does or they block the IP. Which ever occurs first.
+
+# API
 
 ## Endpoints
 
@@ -67,6 +71,12 @@ Example call:
 https://ghostbox.design/api/comics?novariants=1
 ```
 
-## Issues
+# Code
+
+## Scraper Class
+
+## To Do
+
+# Issues
 
 Please feel free to report any issues on the [Github page](https://github.com/raw-bit/ComicsAPI/issues).
