@@ -75,7 +75,47 @@ https://ghostbox.design/api/comics?novariants=1
 
 ## Scraper Class
 
+This API uses a custom webscraper class included in ```Scrape.php```
+
+
+### Get Items By Tag
+
+```
+/**
+** @param String $resource Html that requires processing
+** @param String $starttag First target tag/string to search by
+** @param String $endtag last target tag/string to search by
+** @return Array Containing contents of tags
+**/
+getItemsByTag($resource, $starttag, $endtag)
+```
+
+### Trim Data
+
+```
+/**
+** @param Array $data Html that requires processing
+** @param Int $beginning Items to be trimmed from beginning
+** @param Int $end last Items to be trimmed from end
+** @return Array Containing trimmed data
+**/
+trimData($data, $beginning, $end)
+```
+
+### Clean Data
+
+```
+/**
+** @param Array $data Raw scraped data
+** @return Json Converted array
+**/
+cleanData($data)
+```
+
 ## To Do
+
+* Add key
+* Fix passed publisher list functionality
 
 # Issues
 
