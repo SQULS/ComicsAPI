@@ -16,8 +16,10 @@ class Scrape
 
   function getHtml() {
 
-    $this->html = file_get_contents($this->source);
-
+    $ch = curl_init(); 
+    curl_setopt($ch, CURLOPT_URL, $this->source); 
+    $this->html = curl_exec($ch); 
+    curl_close($ch);
     return $this->html;
 
   }
