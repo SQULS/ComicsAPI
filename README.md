@@ -1,4 +1,4 @@
-**Note:** This documentation and the API it refers to are now deprecated as Comic List is moved its listings to [blog.gocollect.com](https://blog.gocollect.com/category/comiclist/).
+**Note:** This documentation and the API it refers to are now deprecated as Comic List has moved its listings to [blog.gocollect.com](https://blog.gocollect.com/category/comiclist/).
 
 This endpoint provides a service for getting comic releases by way of scraping data from [comiclist.com](http://www.comiclist.com/index.php). This project was initially devised as a way of creating and testing a simple site scraping class for use in other projects. This means that this service will exist as long as Comic List does or they block the IP. Which ever occurs first.
 
